@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MicroSaaS PoMoDoRo</title>
+    <style>
+        :root {
+            --accent: #2ad4c1;
+            --accent-strong: #18b3a2;
+            --muted: #9eb1d7;
+            --focus-ring: rgba(42, 212, 193, 0.28);
+            --radius: 12px;
+        }
+
+        body {
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(circle at 90% 10%, rgba(42, 212, 193, 0.06) 0, rgba(42, 212, 193, 0) 32%),
+                radial-gradient(circle at 10% 85%, rgba(115, 159, 255, 0.06) 0, rgba(115, 159, 255, 0) 32%),
+                linear-gradient(165deg, #04060b 0%, #090d18 100%);
+            color: #e8f0ff;
+            font-family: "Avenir Next", "Century Gothic", "Trebuchet MS", Arial, sans-serif;
+        }
+
+        .privacy-card {
+            background: linear-gradient(140deg, #111a2f 0%, #16223d 100%);
+            border-radius: var(--radius);
+            box-shadow: 0 14px 28px rgba(2, 6, 18, 0.42);
+            border: 1.5px solid #26395e;
+            padding: 28px 18px 18px 18px;
+            max-width: 480px;
+            width: 100%;
+            margin: 24px;
+        }
+
+        .main-title {
+            margin: 0 0 10px 0;
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 0 2px 18px var(--accent), 0 2px 24px rgba(42, 212, 193, 0.18);
+            line-height: 1.1;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin: 0 0 18px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 0.04em;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--accent-strong);
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-size: 1.08em;
+        }
+
+        .last-updated {
+            color: var(--muted);
+            font-style: italic;
+            font-size: 0.95em;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        ul {
+            margin: 10px 0 10px 18px;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        code {
+            background-color: #0d1629;
+            color: var(--accent);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.98em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #26395e;
+            margin: 32px 0 12px 0;
+        }
+
+        @media (max-width: 540px) {
+            .privacy-card {
+                padding: 10px 2vw 10px 2vw;
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="privacy-card">
+        <div class="main-title">MicroSaaS&amp;Co PoMoDoRo</div>
+        <div class="subtitle">Privacy Policy</div>
+        <div class="last-updated">Last Updated: May 23, 2026</div>
+        <div class="section">
+            <h2>1. Introduction</h2>
+            <p>
+                MicroSaaS PoMoDoRo ("the Extension") is a Chrome extension that helps you manage your time and
+                productivity
+                using the Pomodoro technique. This Privacy Policy explains how we handle your data.
+            </p>
+        </div>
+        <div class="section">
+            <h2>2. Data We Collect</h2>
+            <p>The Extension collects and stores the following information <strong>locally on your device only</strong>:
+            </p>
+            <ul>
+                <li><strong>Pomodoro Sessions:</strong> Timer states, durations, and session history</li>
+                <li><strong>User Preferences:</strong> Settings such as durations, auto-start, notifications, chime, and
+                    UI options</li>
+                <li><strong>Notification Preferences:</strong> Your choices for desktop notifications and in-app toasts
+                </li>
+            </ul>
+            <p>No personal or sensitive information is collected.</p>
+        </div>
+        <div class="section">
+            <h2>3. How We Store Data</h2>
+            <p>
+                <strong>All data is stored locally on your device only.</strong> We do NOT:
+            </p>
+            <ul>
+                <li>Send any data to external servers</li>
+                <li>Share data with third parties</li>
+                <li>Store data in the cloud</li>
+                <li>Track your activity</li>
+                <li>Collect analytics</li>
+            </ul>
+            <p>
+                Data is stored using Chrome's <code>chrome.storage.local</code> API, managed by your browser.
+            </p>
+        </div>
+        <div class="section">
+            <h2>4. Data Access & Permissions</h2>
+            <p>
+                The Extension requires the following permissions:
+            </p>
+            <ul>
+                <li><strong>storage:</strong> To save and retrieve your settings and session data locally</li>
+                <li><strong>alarms:</strong> To manage Pomodoro timers in the background</li>
+                <li><strong>notifications:</strong> To show desktop notifications for session transitions</li>
+                <li><strong>host_permissions (&lt;all_urls&gt;):</strong> To allow the extension to open its UI in a new
+                    tab</li>
+            </ul>
+            <p>These permissions are used exclusively to provide the Extension's functionality. No data is sent outside
+                your device.</p>
+        </div>
+        <div class="section">
+            <h2>5. Data Deletion</h2>
+            <p>
+                You can delete your data at any time by:
+            </p>
+            <ul>
+                <li>Resetting or clearing your settings and session history in the Extension's interface</li>
+                <li>Clearing your browser's local storage (which will remove all Extension data)</li>
+                <li>Uninstalling the Extension (this will permanently delete all stored data)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>6. Security</h2>
+            <p>
+                Your data is stored locally on your device and is protected by:
+            </p>
+            <ul>
+                <li>Your operating system's file system permissions</li>
+                <li>Chrome's built-in storage management</li>
+                <li>Your device's password/authentication</li>
+            </ul>
+            <p>
+                We do not transmit data over the internet, eliminating the risk of interception during transmission.
+            </p>
+        </div>
+        <div class="section">
+            <h2>7. Third-Party Services</h2>
+            <p>
+                The Extension does not use any third-party analytics, advertising, or tracking services.
+                We do not share data with Google or any other organization.
+            </p>
+        </div>
+        <div class="section">
+            <h2>8. Children's Privacy</h2>
+            <p>
+                The Extension is not intended for users under 13 years of age. We do not knowingly collect information
+                from children.
+            </p>
+        </div>
+        <div class="section">
+            <h2>9. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. Changes will be reflected with an updated "Last
+                Updated" date. Your continued use of the Extension constitutes acceptance of the updated policy.
+            </p>
+        </div>
+        <div class="section">
+            <h2>10. Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy or the Extension's privacy practices, please reach out
+                through the Chrome Web Store extension page.
+            </p>
+        </div>
+        <hr>
+        <p style="text-align: center; color: #666; font-size: 12px;">
+            This Privacy Policy is effective as of the date listed above.
+        </p>
+    </div>
+</body>
+
+</html>
